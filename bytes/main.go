@@ -87,18 +87,21 @@ func Trim () {
 	two := bytes.Trim(one,"hello")
 	fmt.Printf("%q\n",two)
 }
+
 // 清理 左边 符合 hello的 切片
 func TrimLeft () {
 	one := []byte{'a','b','c','d'}
 	two := bytes.TrimLeft(one,"hello")
 	fmt.Printf("%q\n",two)
 }
+
 // 清理 右边 符合 hello的 切片
 func TrimRight () {
 	one := []byte{'a','b','c','d'}
 	two := bytes.TrimRight(one,"hello")
 	fmt.Printf("%q\n",two)
 }
+
 // 清理俩边的空白
 func TrimSpace () {
 	one := []byte{' ', 'a','b','c','d',' '}
@@ -106,6 +109,7 @@ func TrimSpace () {
 	two := bytes.TrimSpace(one)
 	fmt.Printf("%q\n", two)
 }
+
 // 清理 前缀 prefix  返回 切片
 func TrimPrefix () {
 	one := []byte{'a','b','c','d',' '}
@@ -113,6 +117,7 @@ func TrimPrefix () {
 	three := bytes.TrimPrefix(one,two)
 	fmt.Printf("%q\n",three)
 }
+
 // 清理 后缀 suffix 返回 切片
 func TrimSuffix () {
 	one := []byte{'a','b','c','d',' ','e'}
@@ -120,7 +125,6 @@ func TrimSuffix () {
 	three := bytes.TrimSuffix(one, two)
 	fmt.Printf("%q\n",three)
 }
-
 
 // 拆合
 func Split () {
@@ -172,7 +176,6 @@ func Repeat (){
 	two := bytes.Repeat(one,5)
 	fmt.Printf("%q\n",two)		// "aaaaa"
 }
-
 
 func HasPrefix () {
 	one := []byte{'a', 'b', 'c', 'd', 'e'}

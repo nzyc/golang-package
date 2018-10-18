@@ -28,27 +28,22 @@ func main () {
 	/*
 		示例
 	*/
-
 	arr := []int{1,2,3,4,5,6,7,8,9}
-
 
 	/*
 		fmt.Print
 	*/
 	fmt.Print(arr)		// [1 2 3 4 5 6 7 8 9]	不换行
 
-
 	/*
 		fmtPrintln
 	*/
 	fmt.Println(arr)	// [1 2 3 4 5 6 7 8 9]	换行
 
-
 	/*
 		fmt.Printf
 	*/
 	fmt.Printf("ab %d %d %d cd\n", 1, 2, 3)
-
 
 	/*
 		fmt.Errorf
@@ -57,8 +52,6 @@ func main () {
 	if err := percent(30, 70, 90, 160); err != nil {
 		fmt.Println(err)
 	}
-
-
 }
 
 func percent(i ...int) error {

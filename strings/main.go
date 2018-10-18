@@ -112,6 +112,7 @@ func main () {
 	SplitAfterN()
 }
 
+
 /*
 	比较
 */
@@ -136,6 +137,8 @@ func Replace () {
 func Join () {
 	fmt.Println(strings.Join([]string{"asd","asd","asd","asd","asd"}, "~"))		// asd~asd~asd~asd~asd
 }
+
+
 /*
 	转换
 */
@@ -157,6 +160,8 @@ func ToLower () {
 	two:= strings.ToLower(one)
 	fmt.Println(two)				// hello
 }
+
+
 /*
 	清除
 */
@@ -201,6 +206,8 @@ func TrimPrefix()  {
 func TrimSuffix () {
 	fmt.Println(strings.TrimSuffix("hello world", "ld"))	// hello wor
 }
+
+
 /*
 	 检索
 */
@@ -253,6 +260,8 @@ func LastIndex(){}
 func LastIndexAny(){}
 func LastIndexByte(){}
 func LastIndexFunc(){}
+
+
 /*
 	分割
 */
